@@ -1,6 +1,9 @@
+const { application } = require('express')
 const express = require('express')
-const {generate} = require('../utility/tokenGeneration')
+const generate = require('../utility/tokenGeneration')
 const router = express.Router()
+
+
 
 router.get('/', async (req, res) => {
     try {
